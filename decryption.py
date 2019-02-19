@@ -17,5 +17,5 @@ def decrypt(keyFile, filename):
     for line in lines:
         decrypted = fernet.decrypt(line.encode())
         f= open(filename + "_decrypted", 'a') 
-        f.write(decrypted.decode('utf-8') +  "\n")
+        print(decrypted.decode('utf-8') +  "\n")
         f.close()
