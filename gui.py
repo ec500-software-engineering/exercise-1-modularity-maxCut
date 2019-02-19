@@ -1,4 +1,4 @@
-from tkinter import *
+from tkinter import Label, Tk, IntVar
 from data import data_pull, cleanup
 import time
 from error_handler import Error_Handler
