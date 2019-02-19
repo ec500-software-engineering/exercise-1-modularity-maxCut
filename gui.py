@@ -1,12 +1,10 @@
 from tkinter import Label, Tk, IntVar
 from data import data_pull, cleanup
-import time
 from error_handler import Error_Handler
 from error_handler import check_hr, check_bo, check_bp
-from datastore import insertData, getData
-from encryption import encrypt, generate_key
+from datastore import insertData
+from encryption import generate_key
 from alert_system import page_doctor
-from pathlib import Path
 import os
 import random
 
