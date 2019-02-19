@@ -13,8 +13,6 @@ hr_interval = 5
 bp_interval = 5
 bo_interval = 5
 
-min_int = 5
-
 # current p_id
 p_id = random.randint(0,10000)
 
@@ -78,7 +76,6 @@ def runUI():
 # Store (theoretically encrypted) data
 # Handle errors
 def mainLoop(hr, bp, bp2, bo):
-    min_int = min(hr_interval, bp_interval, bo_interval)
     data_obj = data_pull()
     insertData(p_id,data_obj)
 
