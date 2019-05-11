@@ -1,11 +1,12 @@
 from cryptography.fernet import Fernet
 
+
 def generate_key(p_id):
     filename = str(p_id) + ".key"
-    # A function to generate random keys for users 
+    # A function to generate random keys for users
     key = Fernet.generate_key()
     file = open(filename, 'wb')
-    file.write(key) # The key is type bytes still
+    file.write(key)  # The key is type bytes still
     file.close()
     return key
 

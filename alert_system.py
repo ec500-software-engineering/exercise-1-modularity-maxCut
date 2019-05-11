@@ -16,4 +16,5 @@ def page_doctor(data, identifier, is_anomalous):
             measure_thing = "blood oxygen level"
             value[0] = data.get("blood_oxygen")
 
-        print("Uh oh Doctor, the patient's", measure_thing, "is", value, "at", datetime.datetime.now())
+        print("Uh oh Doctor, the patient's", measure_thing,
+              "is", value, "at", datetime.datetime.now())
